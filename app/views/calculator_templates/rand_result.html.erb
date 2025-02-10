@@ -1,0 +1,11 @@
+<h1>Random Results</h1>
+
+<% if @error_message %>
+  <p style="color: red;"><%= @error_message %></p>
+<% else %>
+  <p><strong>Minimum:</strong> <%= @min %></p>
+  <p><strong>Maximum:</strong> <%= @max %></p>
+  <p><strong>Random Number:</strong> <%= @random_number.round(2) %></p>
+
+  <a href="/random/new">Pick another random number</a>
+<% end %>

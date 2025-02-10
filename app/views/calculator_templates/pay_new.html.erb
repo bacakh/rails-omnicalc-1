@@ -1,0 +1,13 @@
+<form action="/payment/result" method="get">
+
+  <label for="d">APR</label>
+  <input id="d" type="text" name="users_apr" value="<%= params[:users_apr].presence || "" %>" placeholder="E.g. 5.42"><br>
+
+  <label for="e">Number of years</label>
+  <input id="e" type="text" name="users_yr" value="<%= params[:users_yr].presence || "" %>" placeholder="How many years to repay?"><br>
+
+  <label for="c">Principal</label>
+  <input id="c" type="text" name="users_princ" value="<%= params[:users_princ].presence || "" %>" placeholder="How much principal?"><br>
+
+  <button>Calculate monthly payment</button>
+</form>
